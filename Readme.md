@@ -10,13 +10,13 @@ $ docker-compose up --build
 - launch server Websocket
 ````bash
 $ docker exec -it dockersymfonywebsocket_api_1 bash
-$ ./bin/console a:w
+$ ./bin/console dsw:w
 ````
 - Open file index.html on your browser
 - Launch process command on new shell
 ````bash
 $ docker exec -it dockersymfonywebsocket_api_1 bash
-$ ./bin/console a:r
+$ ./bin/console dsw:r
 ````
 
 ### Result
