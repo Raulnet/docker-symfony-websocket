@@ -1,0 +1,13 @@
+version: '2'
+services:
+  api:
+    build: .
+    ports:
+      - "9292:80"
+      - "9696:8080"
+    volumes:
+      - .:/var/www/html:cached
+    environment:
+      WEB_DOCUMENT_ROOT: "/var/www/html/public"
+      APP_ENV: dev
+      APP_DEBUG: 1
